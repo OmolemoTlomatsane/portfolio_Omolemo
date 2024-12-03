@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Omolemo Tlomatsane">
+  <meta name="description" content="Omolemo Tlomatsane's Portfolio Website">
+  <title>Omolemo Tlomatsane | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .anime-icon, .tkinter-icon, .chart-icon, .tailwind-icon, .django-icon, .flask-icon {
+      background-size: cover;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+</head>
+<body class="bg-gray-900 text-white">
+
+  <div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+
+  <header class="fixed w-full bg-gray-800 bg-opacity-90 py-4 px-8 z-10">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-400">Omolemo</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-20">
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center">
+      <h1 class="text-5xl font-bold text-blue-400 mb-4">Omolemo Tlomatsane</h1>
+      <p class="text-xl mb-6">Developer | Innovator</p>
+      <button id="download-cv-btn" class="bg-blue-500 px-6 py-3 text-lg rounded-full hover:bg-blue-400">
+        Download CV
+      </button>
+      
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-8">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="flex flex-col items-center">
+            <i class="fab fa-html5 text-6xl text-orange-500"></i>
+            <p class="mt-2">HTML</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fab fa-css3-alt text-6xl text-blue-500"></i>
+            <p class="mt-2">CSS</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fab fa-js text-6xl text-yellow-400"></i>
+            <p class="mt-2">JavaScript</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fab fa-react text-6xl text-blue-400"></i>
+            <p class="mt-2">React.js</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fab fa-python text-6xl text-yellow-300"></i>
+            <p class="mt-2">Python</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="django-icon"><img src="images/django.png"></span>
+            <p class="mt-2">Django</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="flask-icon"><img src="images/flask.png"></span>
+            <p class="mt-2">Flask</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fab fa-bootstrap text-6xl text-purple-600"></i>
+            <p class="mt-2">Bootstrap</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="tailwind-icon"><img src='images/tailwind.png'></i>
+            <p class="mt-2">Tailwind</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="fas fa-database text-6xl text-green-500"></i>
+            <p class="mt-2">SQL</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="chart-icon"><img src="/images/chart.png"></i>
+            <p class="mt-2">Chart.js</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="anime-icon"><img src="images/anime.png"></i>
+            <p class="mt-2">Anime.js</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <i class="tkinter-icon"><img src="images/tkinter.jpg"></i>
+            <p class="mt-2">Tkinter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-8">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Project 1 -->
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <a href="https://shortly99.netlify.app" target="_blank">
+              <img src="images/Screenshot_3-12-2024_134624_shortly99.netlify.app.jpeg" alt="Shortly Project" class="rounded-md mb-4 w-full h-48 object-cover">
+              <h3 class="text-2xl font-bold text-white mb-2">Shortly</h3>
+              <p class="text-gray-400">A modern link shortener app built with Tailwind and React.js.</p>
+            </a>
+          </div>
+          <!-- Project 2 -->
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <a href="https://news-homepage99.netlify.app" target="_blank">
+              <img src="images/Screenshot_3-12-2024_134440_news-homepage99.netlify.app.jpeg" alt="News Homepage Project" class="rounded-md mb-4 w-full h-48 object-cover">
+              <h3 class="text-2xl font-bold text-white mb-2">News Homepage</h3>
+              <p class="text-gray-400">A sleek, responsive news website built with HTML and Tailwind.</p>
+            </a>
+          </div>
+          <!-- Project 3 -->
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <a href="https://foodsearch1999.netlify.app" target="_blank">
+              <img src="images/Screenshot_3-12-2024_134544_foodsearch1999.netlify.app.jpeg" alt="Food Search Project" class="rounded-md mb-4 w-full h-48 object-cover">
+              <h3 class="text-2xl font-bold text-white mb-2">Food Search</h3>
+              <p class="text-gray-400">A food recipe search app built with React.js and styled using Tailwind CSS.</p>
+            </a>
+          </div>
+          <!-- Project 4 -->
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <a href="https://bejewelled-dango-02c288.netlify.app" target="_blank">
+              <img src="images/Screenshot_3-12-2024_135114_bejewelled-dango-02c288.netlify.app.jpeg" alt="Bejewelled Dango Project" class="rounded-md mb-4 w-full h-48 object-cover">
+              <h3 class="text-2xl font-bold text-white mb-2">Bejewelled Dango</h3>
+              <p class="text-gray-400">A fun and creative project showcasing my front-end skills.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-400 mb-8">Contact Me</h2>
+        <form class="w-3/4 md:w-1/2 mx-auto">
+          <input type="text" id="name" placeholder="Your Name" class="w-full mb-4 px-4 py-2 rounded bg-gray-700">
+          <input type="email" id="email" placeholder="Your Email" class="w-full mb-4 px-4 py-2 rounded bg-gray-700">
+          <textarea placeholder="Your Message" id="message" class="w-full mb-4 px-4 py-2 rounded bg-gray-700"></textarea>
+          <button type="submit" class="bg-blue-500 px-6 py-3 text-lg rounded-full hover:bg-blue-400" id="send_message">
+            Send Message
+          </button>
+          <dialog id="dialog" hidden>
+            <p>Please fill all the fields</p>
+            <button id="close_btn"><h1>X</h1></button>
+          </dialog>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-6 bg-gray-800 text-center">
+    <p>&copy; 2024 Omolemo Tlomatsane. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="particles.js"></script>
+</body>
+</html>
