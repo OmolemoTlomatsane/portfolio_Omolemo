@@ -1,6 +1,15 @@
 import config from './config.js';
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    const downloadButton = document.getElementById("download-cv-btn");
+    
+    downloadButton.addEventListener("click", (e) => {
+        e.preventDefault();  // Prevent default anchor click behavior
+        const filePath = downloadButton.getAttribute("href");  // Get the href attribute value
+        window.location.href = filePath;  // Trigger file download by setting location
+    });
+});
     const sendMsgBtn = document.getElementById('send_message');
 
     // Initialize EmailJS with public key from config file
@@ -37,4 +46,3 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
         }
     });
-});
