@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const messageData = {
                 from_name: name,
                 from_email: email,
-                message: msg,
+                message: `Message: ${msg}\nSender's Email: ${email}`,
                 to_email: config.recipientEmail,  // Use email from config file
             };
 
