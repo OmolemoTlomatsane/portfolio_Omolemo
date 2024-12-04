@@ -1,5 +1,6 @@
 import config from './config.js';
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const downloadButton = document.getElementById("download-cv-btn");
@@ -38,10 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Send email using EmailJS
             emailjs.send(config.serviceID, config.templateID, messageData)
                 .then((response) => {
-                    console.log("Email sent successfully:", response);
                     alert("Your message has been sent successfully!");
                 }, (error) => {
-                    console.error("Error sending email:", error);
                     alert("There was an error sending your message. Please try again.");
                 });
         }
